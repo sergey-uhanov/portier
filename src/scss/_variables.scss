@@ -1,0 +1,135 @@
+@use "sass:math";
+@use "./mixins.scss";
+:root {
+	--navy-blue: #006ada;
+	--steel-gray: #223;
+	--vulcan: #12121c;
+	--aluminium: #88888d;
+	--white: #fff;
+	--lime-green: #57efb4;
+	--font-family: "Sora", sans-serif;
+	--second-family: "DM Sans", sans-serif;
+	--third-family: "Inter", sans-serif;
+}
+$maineColor: var(--aluminium);
+$fontSize: mixins.rem(14);
+$minWidth: 350;
+$maxWidth: 1440;
+$maxWidthContainer: 1230;
+$containerPadding: 30;
+$containerWidth: $maxWidthContainer + $containerPadding;
+$pc: mixins.rem($containerWidth); // ПК, ноутбуки, деякі планшети у горизонтальному положенні
+$tablet: mixins.rem(1024.98); // Планшети, деякі телефони в горизонтальному положенні
+$mobile: mixins.rem(767.98); // Телефони L
+$mobileSmall: mixins.rem(350); // Телефони S
+
+$responsiveType: 2;
+@if ($responsiveType==1) {
+	// Чуйна
+	[class*="__container"] {
+		@if ($maxWidthContainer>0) {
+			max-width: mixins.rem($containerWidth);
+			margin: 0 auto;
+		}
+		@if ($containerPadding>0) {
+			@if ($maxWidthContainer>0) {
+				padding: 0 mixins.rem(math.div($containerPadding, 2));
+			} @else {
+				@include mixins.adaptiveValue("padding-left", math.div($containerPadding, 2), 15);
+				@include mixins.adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
+			}
+		}
+	}
+} @else {
+	// Брейк-поїнтами
+	[class*="__container"] {
+		margin: 0 auto;
+		@if ($maxWidthContainer>0) {
+			max-width: mixins.rem($containerWidth);
+		} @else {
+			@if ($containerPadding>0) {
+				padding: 0 mixins.rem(math.div($containerPadding, 2));
+			}
+		}
+		@media (max-width: $pc) {
+			max-width: mixins.rem(1440);
+		}
+		@media (max-width: $tablet) {
+			max-width: mixins.rem(844);
+		}
+		@media (max-width: $mobile) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 mixins.rem(math.div($containerPadding, 2));
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 mixins.rem(2);
+			}
+		}
+	}
+}
+
+@mixin adaptiveValue($property, $startSize, $minSize, $keepSize: 0, $widthFrom: $containerWidth, $widthTo: $minWidth) {
+	@if ($startSize==0) {
+		$startSize: 0.000001;
+	}
+	@if ($minSize==0) {
+		$minSize: 0.000001;
+	}
+
+	// Для calc();
+	$addSize: math.div($startSize - $minSize, 16);
+
+	@if ($widthFrom == $containerWidth and $maxWidthContainer == 0) {
+		$widthFrom: $maxWidth;
+	}
+
+	// Брейк-поїнти в EM
+	$widthFromMedia: em($widthFrom);
+	$widthToMedia: em($widthTo);
+
+	// Формула плаваючого значення
+	// Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+	$slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
+	$yIntersection: -$widthTo * $slope + $minSize;
+	@if ($yIntersection==0) {
+		$yIntersection: 0.000001;
+	}
+	$flyValue: #{mixins.rem($yIntersection)}" + " #{$slope * 100}vw;
+
+	// Отримання значення властивості
+	$propertyValue: #{"clamp(" mixins.rem($minSize) "," $flyValue "," mixins.rem($startSize) ")"};
+	// Якщо негативні значення
+	@if ($minSize > $startSize) {
+		$propertyValue: #{"clamp(" mixins.rem($startSize) "," $flyValue "," mixins.rem($minSize) ")"};
+	}
+
+	// Встановлюємо значення за замовчуванням
+	@if $keepSize != 1 and $keepSize != 3 {
+		@media (min-width: $widthFromMedia) {
+			#{$property}: mixins.rem($startSize);
+		}
+	}
+	// Адаптуємо розмір у проміжку між зазначеними ширинами в'юпорту
+	@media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
+		// Якщо підтримується clamp();
+		@supports (#{$property}: $propertyValue) {
+			#{$property}: $propertyValue;
+		}
+		// Якщо не підтримується clamp();
+		@supports not (#{$property}: $propertyValue) {
+			#{$property}: calc(
+				#{mixins.rem($minSize)} + #{$addSize} * (100vw - #{mixins.rem($widthTo)}) / #{math.div($widthFrom, 16) -
+					math.div($widthTo, 16)}
+			);
+		}
+	}
+	@if $keepSize != 1 and $keepSize != 2 {
+		@media (max-width: $widthToMedia) {
+			#{$property}: mixins.rem($minSize);
+		}
+	}
+}

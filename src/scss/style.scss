@@ -1,0 +1,46 @@
+@use "./header.scss";
+@use "./_footer.scss";
+@use "sass:math";
+@use "_null.scss";
+// @use "./_footer.scss";
+@use "./home.scss";
+@use "./portfolio.scss";
+@use "./about.scss";
+@use "_buttons.scss";
+@use "./card.scss";
+@use "./main-title.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap");
+
+body {
+	background: var(--vulcan);
+	font-family: var(--font-family);
+	font-weight: 400;
+	color: var(--absolute-white);
+	overflow-x: hidden;
+	// Скролл заблоковано
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+
+	.loaded & {
+	}
+}
+// Оболонка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	@supports (overflow: clip) {
+		overflow: clip;
+	}
+	// Притискаємо footer
+	> main {
+		flex: 1 1 auto;
+	}
+}

@@ -1,0 +1,13 @@
+.blue-button {
+	border-radius: 0.5rem;
+	padding: 0.88rem 1.5rem;
+	background: var(--navy-blue);
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--white);
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
