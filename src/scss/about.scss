@@ -236,3 +236,161 @@
 		}
 	}
 }
+@media (max-width: 350px) {
+	.big-num {
+		padding: mixins.rem(55) 0;
+		&__container {
+			gap: mixins.rem(32);
+		}
+		&__item {
+			max-width: 100%;
+		}
+		&__number {
+			font-size: 2.5rem;
+			line-height: 1.2;
+			letter-spacing: -0.01em;
+		}
+		&__text {
+			text-align: start;
+			font-weight: 400;
+			font-size: 0.85rem;
+			line-height: 1.71429;
+		}
+	}
+}
+
+// =======================================================================
+.experience {
+	padding: mixins.rem(120) 0;
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__text-block {
+		max-width: 40.38rem;
+		position: relative;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 3rem;
+		line-height: 1.16667;
+		letter-spacing: -0.02em;
+		color: var(--white);
+		margin-bottom: mixins.rem(15);
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 0.88rem;
+		line-height: 1.71429;
+		color: var(--aluminium);
+	}
+
+	&__sub-text {
+		font-weight: 400;
+		font-size: 0.88rem;
+		line-height: 1.71429;
+		color: var(--aluminium);
+		position: absolute;
+		bottom: 0;
+	}
+
+	&__narrow-card-block {
+		max-width: mixins.rem(296);
+		width: 100%;
+	}
+}
+@media (max-width: 1024px) {
+	.experience {
+		padding: mixins.rem(85) 0;
+		&__container {
+		}
+
+		&__text-block {
+			max-width: mixins.rem(438);
+		}
+
+		&__title {
+			font-size: 3rem;
+			line-height: 1.16667;
+			letter-spacing: -0.02em;
+		}
+
+		&__text {
+		}
+
+		&__sub-text {
+		}
+
+		&__narrow-card-block {
+		}
+	}
+	.narrow-card {
+		&__icon {
+		}
+
+		&__text {
+		}
+
+		&__title {
+		}
+
+		&__description {
+		}
+	}
+	.narrow-card--active {
+	}
+}
+@media (max-width: 350px) {
+	.experience {
+		padding: mixins.rem(40) 0;
+		&__container {
+		}
+
+		&__text-block {
+			max-width: mixins.rem(438);
+			margin-bottom: mixins.rem(48);
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 2rem;
+			line-height: 1.25;
+			letter-spacing: -0.01em;
+		}
+
+		&__text {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 0.85rem;
+			line-height: 1.71429;
+			color: var(--aluminium);
+			margin-bottom: mixins.rem(48);
+		}
+
+		&__sub-text {
+			position: static;
+		}
+
+		&__narrow-card-block {
+		}
+	}
+	.narrow-card {
+		&__icon {
+		}
+
+		&__text {
+		}
+
+		&__title {
+		}
+
+		&__description {
+		}
+	}
+	.narrow-card--active {
+	}
+}

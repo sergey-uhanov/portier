@@ -1,0 +1,117 @@
+@use "mixins.scss";
+.recall {
+	padding: mixins.rem(0) 0 mixins.rem(203) mixins.rem(300);
+	&__container {
+	}
+
+	&__person {
+		display: flex;
+		align-items: center;
+		gap: mixins.rem(12);
+		margin-bottom: mixins.rem(27);
+	}
+
+	&__name {
+		font-weight: 400;
+		font-size: 0.88rem;
+		line-height: 1.71429;
+		color: var(--aluminium);
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 4.5rem;
+		line-height: 1.19444;
+		letter-spacing: -0.02em;
+		color: var(--white);
+		max-width: mixins.rem(886);
+		margin-bottom: mixins.rem(16);
+	}
+
+	&__date {
+		font-weight: 400;
+		font-size: 0.88rem;
+		line-height: 1.71429;
+		color: var(--aluminium);
+		margin-bottom: mixins.rem(48);
+	}
+
+	&__text {
+		max-width: mixins.rem(830);
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 1.33333;
+		letter-spacing: -0.01em;
+		color: var(--aluminium);
+		margin-bottom: mixins.rem(24);
+	}
+	&__text:not(:last-child) {
+	}
+
+	&__go-back {
+		margin-top: mixins.rem(21);
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 1.5;
+		color: var(--white);
+		background: var(--navy-blue);
+		border-radius: 0.5rem;
+		padding: 0.88rem 1.5rem;
+	}
+}
+@media (max-width: 1024px) {
+	.recall {
+		padding: mixins.rem(0) 0 mixins.rem(85) mixins.rem(0);
+		&__container {
+		}
+
+		&__person {
+		}
+
+		&__name {
+		}
+
+		&__title {
+			font-size: 4rem;
+			line-height: 1;
+		}
+
+		&__date {
+		}
+
+		&__text {
+		}
+
+		&__go-back {
+		}
+	}
+}
+@media (max-width: 350px) {
+	.recall {
+		padding: mixins.rem(0) 0 mixins.rem(52) mixins.rem(0);
+		&__container {
+		}
+
+		&__person {
+		}
+
+		&__name {
+		}
+
+		&__title {
+			font-size: 2.5rem;
+			line-height: 1.2;
+			letter-spacing: -0.01em;
+		}
+
+		&__date {
+		}
+
+		&__text {
+		}
+
+		&__go-back {
+		}
+	}
+}

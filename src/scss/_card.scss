@@ -53,7 +53,126 @@
 		max-width: mixins.rem(399);
 	}
 }
+
+.narrow-card {
+	padding: 1.25rem;
+	max-width: mixins.rem(438);
+	width: 100%;
+	display: flex;
+	gap: mixins.rem(24);
+	&__icon {
+		background: var(--steel-gray);
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__text {
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 1.5rem;
+		line-height: 1.33333;
+		color: var(--white);
+		margin-bottom: mixins.rem(4);
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: 0.75rem;
+		line-height: 1.66667;
+		color: var(--white);
+	}
+}
+.narrow-card:not(:last-child) {
+	margin-bottom: mixins.rem(32);
+}
+.narrow-card--active {
+	background: var(--steel-gray);
+	.narrow-card__icon {
+		background: var(--lime-green);
+	}
+}
+
+.image-cards-block {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 32px;
+}
+.image-card {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 mixins.rem(40);
+	&__text {
+		padding-top: mixins.rem(40);
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 1.25;
+		letter-spacing: -0.01em;
+		color: var(--white);
+		margin-bottom: 1rem;
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: 0.88rem;
+		line-height: 1.71429;
+		color: var(--aluminium);
+		max-width: mixins.rem(508);
+		margin-bottom: mixins.rem(22);
+	}
+
+	&__link {
+		font-weight: 600;
+		font-size: 0.88rem;
+		line-height: 1.71429;
+		color: var(--navy-blue);
+	}
+}
+
 @media (max-width: 1024px) {
+	.image-cards-block {
+	}
+	.image-card {
+		&__text {
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 2rem;
+			line-height: 1.25;
+			letter-spacing: -0.01em;
+		}
+
+		&__description {
+		}
+
+		&__link {
+		}
+	}
+
+	.image-card {
+		&__text {
+			padding-top: mixins.rem(30);
+		}
+		&__title {
+			font-size: 2rem;
+			line-height: 1.25;
+			letter-spacing: -0.01em;
+			max-width: mixins.rem(320);
+		}
+		&__description {
+			max-width: mixins.rem(310);
+			margin-bottom: 1.5rem;
+		}
+	}
 	.wide-card-block {
 		flex-wrap: wrap;
 		gap: 35px;
@@ -80,6 +199,28 @@
 	}
 }
 @media (max-width: 350px) {
+	.image-cards-block {
+		row-gap: mixins.rem(50);
+	}
+	.image-card {
+		&__text {
+			padding-left: 1.5rem;
+			padding-top: 1.375rem;
+		}
+
+		&__title {
+			font-weight: 600;
+			font-size: 1.5rem;
+			line-height: 1.33333;
+		}
+
+		&__description {
+		}
+
+		&__link {
+		}
+	}
+
 	.wide-card-block {
 		gap: mixins.rem(34);
 	}

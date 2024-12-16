@@ -1,0 +1,150 @@
+@use "mixins.scss";
+.blog-firs-screen {
+	padding: mixins.rem(120) 0;
+	&__container {
+		max-width: mixins.rem(832);
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 4.5rem;
+		line-height: 1.19444;
+		letter-spacing: -0.02em;
+		text-align: center;
+		color: var(--white);
+		margin-bottom: mixins.rem(16);
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 1.5rem;
+		line-height: 1.33333;
+		letter-spacing: -0.01em;
+		text-align: center;
+		color: var(--aluminium);
+		margin-bottom: mixins.rem(45);
+	}
+}
+.blog-subscribe {
+	max-width: 45rem;
+	margin: 0 auto;
+	input {
+		border: 1px solid var(--steel-gray);
+		border-radius: 0.5rem;
+		font-weight: 400;
+		font-size: 0.88rem;
+		line-height: 1.71429;
+		color: var(--white);
+		padding: mixins.rem(14) mixins.rem(20);
+		max-width: 35.44rem;
+		width: 100%;
+		background: transparent;
+	}
+	button {
+		border-radius: 0.5rem;
+		padding: 0.88rem 1.5rem;
+		width: 8rem;
+		height: 3.25rem;
+		background: var(--navy-blue);
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 1.5;
+		color: var(--white);
+	}
+}
+
+@media (max-width: 1024px) {
+	.blog-firs-screen {
+		padding: mixins.rem(95) 0;
+		&__container {
+		}
+
+		&__title {
+			font-size: 4rem;
+			line-height: 1;
+			letter-spacing: -0.02em;
+		}
+
+		&__text {
+		}
+	}
+	.blog-subscribe {
+	}
+}
+@media (max-width: 350px) {
+	.blog-firs-screen {
+		padding: mixins.rem(85) 0;
+		&__container {
+		}
+
+		&__title {
+			font-size: 2.5rem;
+			line-height: 1.2;
+			letter-spacing: -0.01em;
+		}
+
+		&__text {
+		}
+	}
+	.blog-subscribe {
+		input {
+			margin-bottom: 0.5rem;
+		}
+		button {
+			width: 100%;
+		}
+	}
+}
+.blog-cards-section {
+	padding: mixins.rem(120) 0;
+	&__container {
+	}
+
+	&__title {
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 3rem;
+		line-height: 1.16667;
+		letter-spacing: -0.02em;
+		color: var(--white);
+		margin-bottom: mixins.rem(16);
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: 0.88rem;
+		line-height: 1.71429;
+		color: var(--aluminium);
+		max-width: mixins.rem(531);
+		margin-bottom: mixins.rem(48);
+	}
+}
+@media (max-width: 1024px) {
+	.blog-cards-section {
+		padding: mixins.rem(105) 0 mixins.rem(120) 0;
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__description {
+		}
+	}
+}
+@media (max-width: 350px) {
+	.blog-cards-section {
+		padding: mixins.rem(6) 0 mixins.rem(60) 0;
+		&__container {
+		}
+
+		&__title {
+			font-size: 2rem;
+			line-height: 1.25;
+			letter-spacing: -0.01em;
+		}
+
+		&__description {
+		}
+	}
+}
