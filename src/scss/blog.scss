@@ -132,6 +132,12 @@
 		}
 	}
 }
+@media (max-width: 768px) {
+	.blog-cards-section {
+		&__container {
+		}
+	}
+}
 @media (max-width: 350px) {
 	.blog-cards-section {
 		padding: mixins.rem(6) 0 mixins.rem(60) 0;

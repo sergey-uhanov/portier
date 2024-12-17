@@ -9,8 +9,9 @@
 @use "./blog.scss";
 @use "./text.scss";
 @use "_buttons.scss";
-@use "./card.scss";
+@use "./_card.scss";
 @use "./main-title.scss";
+@use "./_call-action.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap");

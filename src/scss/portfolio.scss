@@ -1,6 +1,6 @@
 @use "mixins.scss";
 .portfolio-firstscreen {
-	padding: mixins.rem(100) 0 mixins.rem(14) 0;
+	padding: mixins.rem(96.8) 0 mixins.rem(15.6) 0;
 	&__container {
 	}
 }
@@ -27,6 +27,10 @@
 		padding: 0.88rem 1.5rem;
 		background: var(--navy-blue);
 		color: var(--white);
+		transition: all 0.3s ease-in-out;
+	}
+	&__blue-button:hover {
+		background-color: #004693;
 	}
 	&__text {
 		max-width: 38.6rem;
@@ -38,10 +42,7 @@
 		color: var(--aluminium);
 	}
 }
-.first-screen {
-	&__button {
-	}
-}
+
 .blue-button {
 }
 @media (max-width: 1024px) {
@@ -56,6 +57,12 @@
 	}
 	.callToAction--portfolio {
 		padding: 4.4rem 0 5.3rem 0;
+	}
+}
+@media (max-width: 768px) {
+	.portfolio-call-to-action__container {
+		flex-wrap: wrap;
+		gap: mixins.rem(48);
 	}
 }
 @media (max-width: 350px) {
@@ -75,8 +82,6 @@
 		padding: 2.6rem 0 2.9rem 0;
 	}
 	.portfolio-call-to-action__container {
-		flex-wrap: wrap;
-		gap: mixins.rem(48);
 	}
 	.portfolio-call-to-action__blue-button {
 		max-width: 100%;

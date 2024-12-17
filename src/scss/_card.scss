@@ -50,6 +50,7 @@
 .wide-card-block--about {
 	gap: 32px 30px;
 	.wide-card {
+		flex: 1 1 300px;
 		max-width: mixins.rem(399);
 	}
 }
@@ -188,6 +189,9 @@
 	}
 }
 @media (max-width: 805px) {
+	.image-card {
+		justify-content: center;
+	}
 	.wide-card-block__wide-card--1 {
 		order: 1;
 	}

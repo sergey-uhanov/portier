@@ -3,7 +3,7 @@ export function Header(): HTMLElement {
   header.className = 'header';
   header.innerHTML = `
    <div class="header__container">
-            <div class="header__logo-block logo-block">
+            <a href="/" class="header__logo-block logo-block logo-block--about">
               <img
                 src="/logo.svg"
                 alt="logo"
@@ -12,7 +12,7 @@ export function Header(): HTMLElement {
                 height="44"
               />
               <div class="logo-block__title">Portier</div>
-            </div>
+            </a>
             <div class="header__menu menu">
               <button type="button" class="menu__icon icon-menu">
                 <span></span>
@@ -20,13 +20,13 @@ export function Header(): HTMLElement {
               <nav class="menu__body">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="" class="menu__link active">Portfolio</a>
+                    <a href="/portfolio" class="menu__link ">Portfolio</a>
                   </li>
                   <li class="menu__item">
-                    <a href="" class="menu__link">About Me</a>
+                    <a href="/about" class="menu__link">About Me</a>
                   </li>
                   <li class="menu__item">
-                    <a href="" class="menu__link">Blog</a>
+                    <a href="/blog" class="menu__link">Blog</a>
                   </li>
                   <li class="menu__item">
                     <a href="" class="menu__link menu__link--button"

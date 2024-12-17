@@ -6,8 +6,12 @@
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.5;
+	// transition: all 0.3s ease-in-out;
 	color: var(--white);
 	@media (max-width: 768px) {
 		width: 100%;
 	}
+}
+.blue-button:hover {
+	background-color: #004693;
 }

@@ -10,6 +10,9 @@ const outputImagesDir = path.resolve(__dirname, 'images-con');
 convertImages(publicImagesDir, outputImagesDir);
 
 export default defineConfig({
+	css: {
+		postcss: '/postcss.config.js',
+	},
 	build: {
 		rollupOptions: {
 			input: {
