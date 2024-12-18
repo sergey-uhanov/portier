@@ -19,6 +19,9 @@ export default defineConfig({
 			input: {
 				main: resolve(__dirname, 'index.html'),
 				about: resolve(__dirname, 'about.html'),
+				blog: resolve(__dirname, 'blog.html'),
+				portfolio: resolve(__dirname, 'portfolio.html'),
+				text: resolve(__dirname, 'text.html'),
 			},
 		},
 		outDir: './dist',

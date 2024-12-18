@@ -1,40 +1,4 @@
-(function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))a(o);new MutationObserver(o=>{for(const t of o)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&a(n)}).observe(document,{childList:!0,subtree:!0});function i(o){const t={};return o.integrity&&(t.integrity=o.integrity),o.referrerPolicy&&(t.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?t.credentials="include":o.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function a(o){if(o.ep)return;o.ep=!0;const t=i(o);fetch(o.href,t)}})();function C(){const e=document.createElement("header");return e.className="header",e.innerHTML=`
-   <div class="header__container">
-            <a href="/" class="header__logo-block logo-block logo-block--about">
-              <img
-                src="/logo.svg"
-                alt="logo"
-                class="logo-block__logo"
-                width="44"
-                height="44"
-              />
-              <div class="logo-block__title">Portier</div>
-            </a>
-            <div class="header__menu menu">
-              <button type="button" class="menu__icon icon-menu">
-                <span></span>
-              </button>
-              <nav class="menu__body">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="/portfolio" class="menu__link ">Portfolio</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="/about" class="menu__link">About Me</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="/blog" class="menu__link">Blog</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="" class="menu__link menu__link--button"
-                      >Get Template</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div> 
-  `,e}function m(){const e=document.createElement("footer");return e.className="footer",e.innerHTML=`
+(function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const i of o.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function s(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerPolicy&&(o.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?o.credentials="include":e.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(e){if(e.ep)return;e.ep=!0;const o=s(e);fetch(e.href,o)}})();function C(){const t=document.createElement("footer");return t.className="footer",t.innerHTML=`
    <div class="footer__container">
           <div class="footer__logo logo-block logo-block--footer">
             <img
@@ -131,4 +95,4 @@
             </div>
           </div>
         </div>
-  `,e}const s=document.querySelector(".wrapper");s&&(s.prepend(C()),s.appendChild(m()));const d=document.querySelector(".icon-menu"),f=document.querySelector(".menu__list");d.addEventListener("click",()=>{f.classList.toggle("open"),d.classList.toggle("menu-open")});document.addEventListener("DOMContentLoaded",()=>{const e=window.location.pathname;document.querySelectorAll(".menu__link").forEach(i=>{i.getAttribute("href")===e&&i.classList.add("active")})});const r=document.querySelector(".background-block"),c=document.querySelector(".header");document.addEventListener("DOMContentLoaded",()=>{c&&window.location.pathname=="/"&&c.classList.add("header--hidden")});const u=document.querySelector(".first-screen");r&&(r.addEventListener("animationend",e=>{if(e.animationName==="slide-top"){const l=new CustomEvent("expandBackgroundEnd",{bubbles:!0});r.dispatchEvent(l)}}),document.addEventListener("expandBackgroundEnd",()=>{c.classList.add("header--open"),u.classList.remove("first-screen--hiden"),u.classList.add("first-screen--animate")}));document.getElementById("soundButton").addEventListener("click",()=>{const e=document.getElementById("clickSound");e&&e.play().catch(l=>console.error("Ошибка воспроизведения:",l))});
+  `,t}export{C as F};

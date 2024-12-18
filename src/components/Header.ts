@@ -5,7 +5,7 @@ export function Header(): HTMLElement {
    <div class="header__container">
             <a href="/" class="header__logo-block logo-block logo-block--about">
               <img
-                src="../logo.svg"
+                src="./logo.svg"
                 alt="logo"
                 class="logo-block__logo"
                 width="44"
@@ -20,16 +20,16 @@ export function Header(): HTMLElement {
               <nav class="menu__body">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="./portfolio" class="menu__link ">Portfolio</a>
+                    <a href="/portier/dist/portfolio" class="menu__link ">Portfolio</a>
                   </li>
                   <li class="menu__item">
-                    <a href="/about" class="menu__link">About Me</a>
+                    <a href="/portier/dist/about" class="menu__link">About Me</a>
                   </li>
                   <li class="menu__item">
-                    <a href="/blog" class="menu__link">Blog</a>
+                    <a href="/portier/dist/blog" class="menu__link">Blog</a>
                   </li>
                   <li class="menu__item">
-                    <a href="" class="menu__link menu__link--button"
+                    <a href="/portier/dist/text.html" class="menu__link menu__link--button"
                       >Get Template</a
                     >
                   </li>
