@@ -39,7 +39,6 @@
 
 .header {
   padding: 1.75rem 0;
-  opacity: 0;
 }
 .header__container {
   display: flex;
