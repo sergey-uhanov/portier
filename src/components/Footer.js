@@ -47,7 +47,7 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                class="footer__social-link aria-label="github" footer__social-link--active"
+                class="footer__social-link  footer__social-link--active" aria-label="github"
                 ><svg
                   width="15"
                   height="15"
