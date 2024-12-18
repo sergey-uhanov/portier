@@ -1,4 +1,4 @@
-export function Header(): HTMLElement {
+export function Header() {
   const header = document.createElement('header');
   header.className = 'header';
   header.innerHTML = `
