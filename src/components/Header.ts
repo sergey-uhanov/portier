@@ -3,7 +3,7 @@ export function Header(): HTMLElement {
   header.className = 'header';
   header.innerHTML = `
    <div class="header__container">
-            <a href="/" class="header__logo-block logo-block logo-block--about">
+            <a href="portier/dist/" class="header__logo-block logo-block logo-block--about">
               <img
                 src="./logo.svg"
                 alt="logo"

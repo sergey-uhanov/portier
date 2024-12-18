@@ -37,7 +37,7 @@ const header = document.querySelector('.header');
 document.addEventListener("DOMContentLoaded", () => {
 
 
-  if (header && window.location.pathname == '/') {
+  if (header && window.location.pathname == '/portier/dist/') {
     header.classList.add('header--hidden');
   }
 });
