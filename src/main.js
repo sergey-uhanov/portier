@@ -34,8 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const backgroundBlock = document.querySelector('.background-block');
 const header = document.querySelector('.header');
 
-console.log('/portier/dist/');
-console.log(window.location.pathname);
+
 if (header && window.location.pathname == '/portier/dist/') {
   console.log('/portier/dist/');
   console.log(window.location.pathname);

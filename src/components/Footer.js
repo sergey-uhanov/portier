@@ -5,7 +5,7 @@ export function Footer() {
    <div class="footer__container">
           <div class="footer__logo logo-block logo-block--footer">
             <img
-              src="/logo.svg"
+              src="./logo.svg"
               alt="logo"
               class="logo-block__logo"
               width="44"
