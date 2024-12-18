@@ -14,7 +14,7 @@ export function Header() {
               <div class="logo-block__title">Portier</div>
             </a>
             <div class="header__menu menu">
-              <button type="button" class="menu__icon icon-menu">
+              <button type="button" aria-label="open menu" class="menu__icon icon-menu">
                 <span></span>
               </button>
               <nav class="menu__body">

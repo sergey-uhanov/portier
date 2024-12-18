@@ -26,7 +26,7 @@
               Copyright 2021 © Portier. All right reserved
             </div>
             <div class="footer__social-block">
-              <a href="#" class="footer__social-link"
+              <a href="#" aria-label="Twitter" class="footer__social-link"
                 ><svg
                   width="15"
                   height="15"
@@ -44,7 +44,7 @@
               </a>
               <a
                 href="#"
-                class="footer__social-link footer__social-link--active"
+                class="footer__social-link aria-label="Twitter" footer__social-link--active"
                 ><svg
                   width="15"
                   height="15"
@@ -60,7 +60,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="footer__social-link"
+              <a href="#" aria-label="Twitter" class="footer__social-link"
                 ><svg
                   width="15"
                   height="15"
@@ -76,7 +76,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="footer__social-link"
+              <a href="#" aria-label="Twitter" class="footer__social-link"
                 ><svg
                   width="13"
                   height="15"
