@@ -2,7 +2,12 @@
 @use "_mixins.scss";
 //====================================================================================================
 .header {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	padding: mixins.rem(21.6) 0;
+	background-color: var(--vulcan);
+	z-index: 100;
 
 	&__container {
 		display: flex;

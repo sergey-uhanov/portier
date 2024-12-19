@@ -46,7 +46,7 @@
 	}
 }
 .call-to-action_about {
-	padding: mixins.rem(120) 0 mixins.rem(124.8) 0;
+	padding: mixins.rem(118.4) 0 mixins.rem(120) 0;
 }
 @media (max-width: 1024px) {
 	.call-to-action {
@@ -70,10 +70,10 @@
 		}
 	}
 	.call-to-action_about {
-		padding: mixins.rem(80) 0 mixins.rem(83.2) 0;
+		padding: mixins.rem(80) 0 mixins.rem(100.2) 0;
 	}
 	.call-to-action_portfolio {
-		padding: mixins.rem(70) 0 mixins.rem(83) 0;
+		padding-top: mixins.rem(70);
 	}
 }
 @media (max-width: 786px) {
@@ -89,6 +89,7 @@
 	}
 	.call-to-action__title {
 		margin: 0 auto;
+		font-size: 2rem;
 	}
 }
 @media (max-width: 414px) {

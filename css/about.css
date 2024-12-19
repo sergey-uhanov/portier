@@ -1,5 +1,6 @@
 .about-first-screen {
-  padding: 22.1875rem 0 7.5rem 0;
+  padding-top: 27.9375rem;
+  padding-bottom: 7.5rem;
 }
 .about-first-screen__container {
   display: flex;
@@ -10,7 +11,7 @@
 .about-first-screen .overlay {
   position: absolute;
   left: 50%;
-  top: 37%;
+  top: 30%;
   transform: translate(-50%);
   z-index: 0;
 }
@@ -52,15 +53,15 @@
 
 @media (max-width: 1024px) {
   .about-first-screen {
-    padding: 31.5625rem 0 7.5rem 0;
+    padding: 37.375rem 0 7.5rem 0;
   }
   .about-first-screen .overlay {
-    top: 37%;
+    top: 27%;
   }
 }
 @media (max-width: 500px) {
   .about-first-screen {
-    padding: 25.4375rem 0 2.8125rem 0;
+    padding: 31.25rem 0 2.8125rem 0;
   }
   .about-first-screen .overlay {
     top: 35%;
@@ -85,9 +86,9 @@
     gap: 2.5rem;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
   .about-first-screen .overlay {
-    top: 23%;
+    top: 34%;
   }
 }
 .about-cards {
@@ -123,7 +124,7 @@
     margin-bottom: 4.25rem;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
   .about-cards {
     padding: 2.1875rem 0 0.875rem;
   }
@@ -174,7 +175,7 @@
 
 @media (max-width: 1024px) {
   .big-num {
-    padding: 7.1875rem 0;
+    padding: 7.5625rem 0 7.1875rem 0;
   }
   .big-num__container {
     gap: 5.8125rem;
@@ -198,7 +199,7 @@
     gap: 2.1rem;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
   .big-num__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -305,5 +306,8 @@
   }
   .experience__sub-text {
     position: static;
+  }
+  .experience__narrow-card-block {
+    max-width: 25rem;
   }
 }

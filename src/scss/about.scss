@@ -1,7 +1,8 @@
 @use "mixins.scss";
 
 .about-first-screen {
-	padding: mixins.rem(355) 0 mixins.rem(120) 0;
+	padding-top: mixins.rem(447);
+	padding-bottom: mixins.rem(120);
 
 	&__container {
 		display: flex;
@@ -12,7 +13,7 @@
 	.overlay {
 		position: absolute;
 		left: 50%;
-		top: 37%;
+		top: 30%;
 		transform: translate(-50%);
 
 		z-index: 0;
@@ -60,9 +61,9 @@
 
 @media (max-width: 1024px) {
 	.about-first-screen {
-		padding: mixins.rem(505) 0 mixins.rem(120) 0;
+		padding: mixins.rem(598) 0 mixins.rem(120) 0;
 		.overlay {
-			top: 37%;
+			top: 27%;
 		}
 		&__container {
 		}
@@ -91,7 +92,7 @@
 }
 @media (max-width: 500px) {
 	.about-first-screen {
-		padding: mixins.rem(407) 0 mixins.rem(45) 0;
+		padding: mixins.rem(500) 0 mixins.rem(45) 0;
 		.overlay {
 			top: 35%;
 		}
@@ -130,10 +131,10 @@
 	.main-title_about {
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
 	.about-first-screen {
 		.overlay {
-			top: 23%;
+			top: 34%;
 		}
 	}
 }
@@ -175,7 +176,7 @@
 		}
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
 	.about-cards {
 		padding: mixins.rem(35) 0 mixins.rem(14);
 		&__title {
@@ -232,7 +233,7 @@
 }
 @media (max-width: 1024px) {
 	.big-num {
-		padding: mixins.rem(115) 0;
+		padding: mixins.rem(121) 0 mixins.rem(115) 0;
 		&__container {
 			gap: mixins.rem(93);
 		}
@@ -258,7 +259,7 @@
 		}
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
 	.big-num {
 		&__container {
 			flex-direction: row;
@@ -408,6 +409,7 @@
 		}
 
 		&__narrow-card-block {
+			max-width: 25rem;
 		}
 	}
 	.narrow-card {

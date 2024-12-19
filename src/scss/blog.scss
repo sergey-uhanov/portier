@@ -1,8 +1,8 @@
 @use "mixins.scss";
 .blog-firs-screen {
-	padding: mixins.rem(120) 0;
+	padding: mixins.rem(206.4) 0 mixins.rem(120) 0;
 	&__container {
-		max-width: mixins.rem(832);
+		max-width: mixins.rem(1008);
 	}
 
 	&__title {
@@ -12,7 +12,7 @@
 		letter-spacing: -0.02em;
 		text-align: center;
 		color: var(--white);
-		margin-bottom: mixins.rem(16);
+		margin-bottom: mixins.rem(17.6);
 	}
 
 	&__text {
@@ -22,11 +22,11 @@
 		letter-spacing: -0.01em;
 		text-align: center;
 		color: var(--aluminium);
-		margin-bottom: mixins.rem(45);
+		margin-bottom: mixins.rem(46.6);
 	}
 }
 .blog-subscribe {
-	max-width: 45rem;
+	max-width: 44.2rem;
 	margin: 0 auto;
 	input {
 		border: 1px solid var(--steel-gray);
@@ -55,7 +55,7 @@
 
 @media (max-width: 1024px) {
 	.blog-firs-screen {
-		padding: mixins.rem(95) 0;
+		padding: mixins.rem(188) 0 mixins.rem(95) 0;
 		&__container {
 		}
 
@@ -71,9 +71,9 @@
 	.blog-subscribe {
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 500px) {
 	.blog-firs-screen {
-		padding: mixins.rem(85) 0;
+		padding: mixins.rem(177.8) 0 mixins.rem(45) 0;
 		&__container {
 		}
 
@@ -96,7 +96,7 @@
 	}
 }
 .blog-cards-section {
-	padding: mixins.rem(120) 0;
+	padding: mixins.rem(120) 0 mixins.rem(120) 0;
 	&__container {
 	}
 
@@ -138,9 +138,9 @@
 		}
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 500px) {
 	.blog-cards-section {
-		padding: mixins.rem(6) 0 mixins.rem(60) 0;
+		padding: mixins.rem(46) 0 mixins.rem(44) 0;
 		&__container {
 		}
 

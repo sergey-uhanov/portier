@@ -1,6 +1,8 @@
 @use "mixins.scss";
 .recall {
-	padding: mixins.rem(0) 0 mixins.rem(203) mixins.rem(300);
+	padding-top: mixins.rem(200);
+	padding-bottom: mixins.rem(202.4);
+	padding-left: mixins.rem(213);
 	&__container {
 	}
 
@@ -62,7 +64,7 @@
 }
 @media (max-width: 1024px) {
 	.recall {
-		padding: mixins.rem(0) 0 mixins.rem(85) mixins.rem(0);
+		padding: mixins.rem(98) 0 mixins.rem(102.6) mixins.rem(0);
 		&__container {
 		}
 
@@ -87,9 +89,9 @@
 		}
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 500px) {
 	.recall {
-		padding: mixins.rem(0) 0 mixins.rem(52) mixins.rem(0);
+		padding: mixins.rem(90) 0 mixins.rem(53.6) mixins.rem(0);
 		&__container {
 		}
 
@@ -112,6 +114,7 @@
 		}
 
 		&__go-back {
+			margin-top: mixins.rem(36);
 		}
 	}
 }

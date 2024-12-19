@@ -1,4 +1,4 @@
-import{F as l}from"./Footer-D_COwTIF.js";function r(){const e=document.createElement("header");return e.className="header",e.innerHTML=`
+import{F as l}from"./Footer-BaQtx1VZ.js";function r(){const e=document.createElement("header");return e.className="header",e.innerHTML=`
    <div class="header__container">
             <a href="/portier/dist/" class="header__logo-block logo-block logo-block_about">
               <img

@@ -31,7 +31,12 @@
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 1.35rem 0;
+  background-color: var(--vulcan);
+  z-index: 100;
 }
 .header__container {
   display: flex;

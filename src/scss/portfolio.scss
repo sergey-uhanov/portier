@@ -1,16 +1,11 @@
 @use "mixins.scss";
 .portfolio-firstscreen {
-	padding: mixins.rem(96.8) 0 mixins.rem(15.6) 0;
+	padding-top: mixins.rem(143.2);
+	padding-bottom: mixins.rem(15.6);
 	&__container {
 	}
 }
-.main-title {
-	&__title-mark {
-	}
 
-	&__title-point {
-	}
-}
 .portfolio-call-to-action {
 	padding: mixins.rem(48) 0 mixins.rem(200) 0;
 	border-top: 1px solid var(--steel-gray);
@@ -47,7 +42,9 @@
 }
 @media (max-width: 1024px) {
 	.portfolio-firstscreen {
-		padding: 4.45rem 0 1.275rem 0;
+		// padding: 4.45rem 0 1.275rem 0;
+		padding-top: 7.45rem;
+		padding-bottom: 1.17rem;
 	}
 	.portfolio-call-to-action__text {
 		max-width: 30.9rem;
@@ -65,9 +62,10 @@
 		gap: mixins.rem(48);
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
 	.portfolio-firstscreen {
-		padding: 3.05rem 0 0.85rem 0;
+		padding-top: 5.95rem;
+		padding-bottom: 0.95rem;
 		font-size: 2.5rem;
 		line-height: 1.2;
 		letter-spacing: -0.01em;

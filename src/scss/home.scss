@@ -2,13 +2,13 @@
 @use "_card.scss";
 @use "_variables.scss";
 .first-screen {
-	padding-top: mixins.rem(118.2);
+	padding-top: mixins.rem(206.2);
 	padding-bottom: mixins.rem(115);
 	position: relative;
 	z-index: -1;
 
 	@media (max-width: 1024px) {
-		padding-top: mixins.rem(103);
+		padding-top: mixins.rem(191);
 		padding-bottom: mixins.rem(100);
 		.first-screen__title {
 			margin-bottom: 1rem;
@@ -25,7 +25,7 @@
 		padding: mixins.rem(90) 0 mixins.rem(45);
 	}
 	@media (max-width: 414px) {
-		padding-top: mixins.rem(100);
+		padding-top: mixins.rem(181.6);
 		padding-bottom: mixins.rem(49);
 	}
 	&__container {
