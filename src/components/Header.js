@@ -3,7 +3,7 @@ export function Header() {
   header.className = 'header';
   header.innerHTML = `
    <div class="header__container">
-            <a href="/portier/dist/" class="header__logo-block logo-block logo-block--about">
+            <a href="/portier/dist/" class="header__logo-block logo-block logo-block_about">
               <img
                 src="./logo.svg"
                 alt="logo"
@@ -29,7 +29,7 @@ export function Header() {
                     <a href="/portier/dist/blog" class="menu__link">Blog</a>
                   </li>
                   <li class="menu__item">
-                    <a href="/portier/dist/text.html" class="menu__link menu__link--button"
+                    <a href="/portier/dist/text.html" class="menu__link menu__link_button"
                       >Get Template</a
                     >
                   </li>

@@ -2,7 +2,7 @@
 @use "_mixins.scss";
 //====================================================================================================
 .header {
-	padding: mixins.rem(28) 0;
+	padding: mixins.rem(21.6) 0;
 
 	&__container {
 		display: flex;
@@ -22,7 +22,7 @@
 		color: #456;
 	}
 }
-.header--open {
+.header_open {
 	will-change: transform, opacity;
 	transform: translateZ(0);
 	animation: open-header 1s forwards;
@@ -43,9 +43,9 @@
 	&__title {
 	}
 }
-.logo-block--about {
+.logo-block_about {
 	position: relative;
-	left: -10px;
+	top: 1px;
 }
 .menu {
 	&__icon {
@@ -69,12 +69,14 @@
 
 	&__link {
 	}
-	&__link--button {
+	&__link_button {
 		background: var(--steel-gray);
 		border-radius: 0.5rem;
 		padding: 0.88rem 1.5rem;
-		width: 8.75rem;
-		height: 3rem;
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: 0.88rem;
+		line-height: 1.42857;
 		color: var(--white);
 	}
 }
@@ -88,16 +90,17 @@
 		position: relative;
 		&__body {
 			width: 200px;
+			position: absolute;
+			z-index: 100;
 		}
 		&__icon {
 			position: absolute;
-			right: 0;
-			bottom: -6px;
+			right: 8px;
+			bottom: -12px;
 		}
 		&__list {
 			will-change: transform, opacity;
 			transform: translateZ(0);
-			// opacity: 0;
 			max-width: 300px;
 			width: 100%;
 			padding: 20px;
@@ -109,12 +112,12 @@
 	}
 	.menu__list.open {
 		will-change: transform, opacity;
-		transform: translateZ(0);
-		// opacity: 0;
-		z-index: 10;
+
+		position: absolute;
 		background-color: var(--vulcan);
-		transform: translateX(0%);
+		transform: translateX(-200px) translateZ(0px);
 		padding-bottom: 40px;
+		z-index: 100;
 	}
 }
 
@@ -126,7 +129,7 @@
 	display: none;
 	@media (max-width: variables.$mobile) {
 		display: block;
-		position: absolute;
+		// position: absolute;
 		width: mixins.rem(30);
 		height: mixins.rem(18);
 		z-index: 105;
@@ -175,23 +178,24 @@
 		transform: rotate(45deg);
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
+	.header__logo-block {
+		margin-left: mixins.rem(0);
+	}
 	.logo-block {
-		gap: 0;
+		gap: 5px;
 		&__title {
 			font-weight: 700;
 			font-size: 1.38rem;
 		}
-	}
-	.logo-block--footer {
-		.logo-block__title {
-			margin-left: 8px;
-			font-size: 1.69rem;
+		&__logo {
+			width: 2.38rem;
+			height: 2.38rem;
 		}
 	}
 }
 
-.header--hidden {
+.header_hidden {
 	will-change: transform, opacity;
 	transform: translateZ(0);
 	opacity: 0;

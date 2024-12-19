@@ -1,6 +1,8 @@
 @use "mixins.scss";
 .footer {
-	padding: mixins.rem(115) 0;
+	padding-top: mixins.rem(118.2);
+	padding-bottom: mixins.rem(115);
+	background: var(--steel-gray);
 	&__container {
 	}
 	&__logo {
@@ -22,6 +24,8 @@
 		line-height: 1.5;
 		color: var(--aluminium);
 		font-family: var(--third-family);
+		position: relative;
+		top: -3px;
 	}
 
 	&__social-block {
@@ -39,7 +43,7 @@
 	&__social-link:not(:last-child) {
 		margin-right: 24px;
 	}
-	&__social-link--active {
+	&__social-link_active {
 		border-radius: 3.12rem;
 		background: var(--lime-green);
 	}
@@ -64,6 +68,7 @@
 }
 @media (max-width: 1024px) {
 	.footer {
+		padding-top: mixins.rem(99);
 		&__container {
 		}
 
@@ -101,9 +106,9 @@
 		}
 	}
 }
-@media (max-width: 350px) {
+@media (max-width: 414px) {
 	.footer {
-		padding: mixins.rem(45) 0;
+		padding: mixins.rem(48.2) 0;
 		&__container {
 		}
 
@@ -146,6 +151,12 @@
 
 		&__item {
 			max-width: mixins.rem(155);
+		}
+	}
+	.logo-block_footer {
+		.logo-block__title {
+			margin-left: 8px;
+			font-size: 1.69rem;
 		}
 	}
 }

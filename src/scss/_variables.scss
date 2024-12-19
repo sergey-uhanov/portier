@@ -15,60 +15,30 @@ $maineColor: var(--aluminium);
 $fontSize: mixins.rem(14);
 $minWidth: 350;
 $maxWidth: 1440;
-$maxWidthContainer: 1230;
-$containerPadding: 30;
+$maxWidthContainer: 1260;
+$containerPadding: 180;
 $containerWidth: $maxWidthContainer + $containerPadding;
 $pc: mixins.rem($containerWidth); // ПК, ноутбуки, деякі планшети у горизонтальному положенні
-$tablet: mixins.rem(1024.98); // Планшети, деякі телефони в горизонтальному положенні
+$tablet: mixins.rem(1023.98); // Планшети, деякі телефони в горизонтальному положенні
 $mobile: mixins.rem(767.98); // Телефони L
 $mobileSmall: mixins.rem(350); // Телефони S
 
-$responsiveType: 2;
-@if ($responsiveType==1) {
-	// Чуйна
-	[class*="__container"] {
-		@if ($maxWidthContainer>0) {
-			max-width: mixins.rem($containerWidth);
-			margin: 0 auto;
-		}
-		@if ($containerPadding>0) {
-			@if ($maxWidthContainer>0) {
-				padding: 0 mixins.rem(math.div($containerPadding, 2));
-			} @else {
-				@include mixins.adaptiveValue("padding-left", math.div($containerPadding, 2), 15);
-				@include mixins.adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
-			}
-		}
-	}
-} @else {
-	// Брейк-поїнтами
-	[class*="__container"] {
+// Чуйна
+[class*="__container"] {
+	@if ($maxWidthContainer>0) {
+		max-width: mixins.rem($containerWidth);
 		margin: 0 auto;
-		@if ($maxWidthContainer>0) {
-			max-width: mixins.rem($containerWidth);
-		} @else {
-			@if ($containerPadding>0) {
-				padding: 0 mixins.rem(math.div($containerPadding, 2));
-			}
-		}
-		@media (max-width: $pc) {
-			max-width: mixins.rem(1440);
-		}
-		@media (max-width: $tablet) {
-			max-width: mixins.rem(844);
-		}
-		@media (max-width: $mobile) {
-			max-width: none;
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 mixins.rem(math.div($containerPadding, 2));
-			}
-		}
-		@media (max-width: $mobileSmall) {
-			max-width: none;
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 mixins.rem(2);
-			}
-		}
+	}
+
+	@media (min-width: 1024px) {
+		padding: 0 90px;
+	}
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		padding: 0 clamp(15px, calc(15px + (90 - 15) * ((100vw - 768px) / (1024 - 768))), 90px);
+	}
+	@media (max-width: 768px) {
+		padding: 0 32px;
 	}
 }
 

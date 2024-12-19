@@ -1,7 +1,8 @@
 @use "_mixins.scss";
 // action-section==============================================
-.callToAction {
-	padding: mixins.rem(120) 0;
+.call-to-action {
+	padding-top: mixins.rem(120);
+	padding-bottom: mixins.rem(120);
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -44,12 +45,13 @@
 		color: var(--white);
 	}
 }
-.callToAction--about {
+.call-to-action_about {
 	padding: mixins.rem(120) 0 mixins.rem(124.8) 0;
 }
 @media (max-width: 1024px) {
-	.callToAction {
-		padding: mixins.rem(80) 0;
+	.call-to-action {
+		padding-top: mixins.rem(80);
+		padding-bottom: mixins.rem(99.2);
 
 		&__container {
 		}
@@ -67,31 +69,32 @@
 		&__title {
 		}
 	}
-	.callToAction--about {
+	.call-to-action_about {
 		padding: mixins.rem(80) 0 mixins.rem(83.2) 0;
 	}
-	.callToAction--portfolio {
+	.call-to-action_portfolio {
 		padding: mixins.rem(70) 0 mixins.rem(83) 0;
 	}
 }
 @media (max-width: 786px) {
-	.callToAction {
+	.call-to-action {
 		padding: mixins.rem(45) 0;
 	}
-	.callToAction__container {
+	.call-to-action__container {
 		display: block;
 	}
-	.callToAction__text-block {
+	.call-to-action__text-block {
 		margin: 0 auto;
 		max-width: 31.94rem;
 	}
-	.callToAction__title {
+	.call-to-action__title {
 		margin: 0 auto;
 	}
 }
-@media (max-width: 350px) {
-	.callToAction {
-		padding: mixins.rem(45) 0;
+@media (max-width: 414px) {
+	.call-to-action {
+		padding-top: mixins.rem(45);
+		padding-bottom: mixins.rem(45);
 
 		&__container {
 			flex-wrap: wrap;

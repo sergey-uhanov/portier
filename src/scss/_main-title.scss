@@ -5,18 +5,19 @@
 	line-height: 1.19444;
 	letter-spacing: -0.02em;
 	color: var(--white);
-	margin-bottom: mixins.rem(16);
+	margin-bottom: mixins.rem(19.2);
 	@media (max-width: 1024px) {
 		font-size: 4rem;
 		line-height: 1;
 	}
-	@media (max-width: 350px) {
-		font-size: calc(40px + 24 * ((100vw - 320px) / (1024 - 320)));
+	@media (max-width: 414px) {
+		font-size: calc(38px + 24 * ((100vw - 320px) / (1024 - 320)));
+		line-height: 1.1;
 		margin-bottom: mixins.rem(22);
 	}
 }
 
-.main-title--about {
+.main-title_about {
 	max-width: 40.38rem;
 }
 .main-title__title-mark {
@@ -26,11 +27,11 @@
 .main-title__title-point {
 	color: var(--lime-green);
 }
-.main-title--low {
+.main-title_low {
 	max-width: mixins.rem(809);
 }
-@media (max-width: 350px) {
-	.main-title--low {
+@media (max-width: 414px) {
+	.main-title_low {
 		font-weight: 700;
 		font-size: 2.5rem;
 		line-height: 1.2;

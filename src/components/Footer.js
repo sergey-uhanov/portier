@@ -3,7 +3,7 @@ export function Footer() {
   footer.className = 'footer';
   footer.innerHTML = `
    <div class="footer__container">
-          <div class="footer__logo logo-block logo-block--footer">
+          <div class="footer__logo logo-block logo-block_footer">
             <img
               src="./logo.svg"
               alt="logo"
@@ -47,7 +47,7 @@ export function Footer() {
               </a>
               <a
                 href="#"
-                class="footer__social-link  footer__social-link--active" aria-label="github"
+                class="footer__social-link  footer__social-link_active" aria-label="github"
                 ><svg
                   width="15"
                   height="15"

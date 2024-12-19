@@ -40,7 +40,7 @@ if (header && window.location.pathname == '/portier/dist/') {
   console.log(window.location.pathname);
 
 
-  header.classList.add('header--hidden');
+  header.classList.add('header_hidden');
 }
 
 
@@ -59,9 +59,9 @@ if (backgroundBlock) {
 
   })
   document.addEventListener("expandBackgroundEnd", () => {
-    header.classList.add('header--open');
-    firstScreen.classList.remove('first-screen--hiden')
-    firstScreen.classList.add('first-screen--animate');
+    header.classList.add('header_open');
+    firstScreen.classList.remove('first-screen_hiden')
+    firstScreen.classList.add('first-screen_animate');
   })
 }
 

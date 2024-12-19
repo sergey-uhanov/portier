@@ -42,3 +42,10 @@
 }
 
 // Адаптивна властивість (clamp)
+@mixin responsive-value($property, $min, $max, $min-width, $max-width) {
+	#{$property}: clamp(
+		#{$min},
+		calc(#{$min} + (#{$max} - #{$min}) * ((100vw - #{$min-width}) / (#{$max-width} - #{$min-width}))),
+		#{$max}
+	);
+}
