@@ -1,6 +1,6 @@
 (function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const i of o.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function s(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerPolicy&&(o.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?o.credentials="include":e.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(e){if(e.ep)return;e.ep=!0;const o=s(e);fetch(e.href,o)}})();function C(){const l=document.createElement("footer");return l.className="footer",l.innerHTML=`
    <div class="footer__container">
-          <div class="footer__logo logo-block logo-block--footer">
+          <div class="footer__logo logo-block logo-block_footer">
             <img
               src="./logo.svg"
               alt="logo"
@@ -44,7 +44,7 @@
               </a>
               <a
                 href="#"
-                class="footer__social-link  footer__social-link--active" aria-label="github"
+                class="footer__social-link  footer__social-link_active" aria-label="github"
                 ><svg
                   width="15"
                   height="15"
