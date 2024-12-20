@@ -1,14 +1,10 @@
 {
-  "semi": true,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "trailingComma": "es5",
-  "printWidth": 80,
   "plugins": ["stylelint-order"],
+  "customSyntax": "postcss-scss",
   "rules": {
     "order/properties-alphabetical-order": true,
     "rule-empty-line-before": [
-      "always",
+      "always-multi-line",
       {
         "except": ["first-nested"],
         "ignore": ["after-comment"]

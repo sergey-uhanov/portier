@@ -7,7 +7,7 @@
 .blog-firs-screen__title {
   font-weight: 700;
   font-size: 4.5rem;
-  line-height: 1.19444;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--white);
@@ -16,7 +16,7 @@
 .blog-firs-screen__text {
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.3;
   letter-spacing: -0.01em;
   text-align: center;
   color: var(--aluminium);
@@ -32,7 +32,7 @@
   border-radius: 0.5rem;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--white);
   padding: 0.875rem 1.25rem;
   max-width: 35.44rem;
@@ -84,7 +84,7 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 1rem;
@@ -92,7 +92,7 @@
 .blog-cards-section__description {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
   max-width: 33.1875rem;
   margin-bottom: 3rem;

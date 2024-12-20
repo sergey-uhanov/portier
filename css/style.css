@@ -80,7 +80,7 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 0.88rem;
-  line-height: 1.14286;
+  line-height: 1.1;
   color: var(--aluminium);
 }
 .menu__link_button {
@@ -90,7 +90,7 @@
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 0.88rem;
-  line-height: 1.42857;
+  line-height: 1.4;
   color: var(--white);
 }
 
@@ -262,7 +262,7 @@
   padding-bottom: 3rem;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--white);
 }
 .footer-menu__list {
@@ -401,14 +401,14 @@ h6 {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.33;
   color: var(--white);
   margin-bottom: 1rem;
 }
 .wide-card__description {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--aluminium);
 }
 
@@ -445,14 +445,14 @@ h6 {
 .experience__narrow-card-block .narrow-card__title {
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.33;
   color: var(--white);
   margin-bottom: 0.25rem;
 }
 .experience__narrow-card-block .narrow-card__description {
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 1.66667;
+  line-height: 1.66;
   color: var(--white);
 }
 
@@ -492,7 +492,7 @@ h6 {
 .image-card__description {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--aluminium);
   max-width: 31.75rem;
   margin-bottom: 1.375rem;
@@ -500,7 +500,7 @@ h6 {
 .image-card__link {
   font-weight: 600;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--navy-blue);
   position: relative;
   left: 4px;
@@ -581,7 +581,7 @@ h6 {
   }
   .image-cards-block {
     row-gap: 3.125rem;
-    row-gap: 2.125rem;
+    row-gap: 2.1rem;
   }
   .image-card__text {
     padding-left: 0.6rem;
@@ -591,7 +591,7 @@ h6 {
   .image-card__title {
     font-weight: 600;
     font-size: 1.5rem;
-    line-height: 1.33333;
+    line-height: 1.33;
   }
   .image-card__link {
     left: 0;
@@ -605,7 +605,7 @@ h6 {
   .wide-card__description {
     font-weight: 300;
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.71;
   }
 }
 .first-screen {
@@ -643,7 +643,7 @@ h6 {
 .first-screen__description {
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.3;
   letter-spacing: -0.01em;
   color: var(--aluminium);
   margin-bottom: 2rem;
@@ -791,7 +791,7 @@ h6 {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--white);
 }
 .big-poster__icon {
@@ -800,8 +800,8 @@ h6 {
   height: 2.75rem;
   background: var(--steel-gray);
   position: absolute;
-  bottom: 2.275rem;
-  right: 2.6125rem;
+  bottom: 2.2rem;
+  right: 2.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -924,13 +924,13 @@ h6 {
   flex: 1 1 400px;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
 }
 .section-with-img__title {
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 1rem;
@@ -1024,7 +1024,7 @@ h6 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
 }
 .strange-section__container {
@@ -1037,7 +1037,7 @@ h6 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
   max-width: 40.38rem;
   width: 100%;
@@ -1046,7 +1046,7 @@ h6 {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 1rem;
@@ -1071,14 +1071,14 @@ h6 {
 .comment-card__author {
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.3;
   color: var(_white);
   margin-bottom: 0.25rem;
 }
 .comment-card__position {
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 1.66667;
+  line-height: 1.6;
   color: var(--white);
 }
 
@@ -1128,7 +1128,7 @@ h6 {
   .strange-section__description {
     max-width: 20.625rem;
     font-size: 0.85rem;
-    line-height: 1.71429;
+    line-height: 1.7;
     margin-bottom: 3rem;
   }
   .strange-section__text {
@@ -1140,11 +1140,11 @@ h6 {
   }
   .comment-card__description {
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.7;
   }
   .comment-card__author {
     font-size: 1.45rem;
-    line-height: 1.33333;
+    line-height: 1.3;
   }
   .comment-card:not(:last-child) {
     margin-bottom: 0.9375rem;
@@ -1162,7 +1162,7 @@ h6 {
 .inform-section__title {
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
   max-width: 40.375rem;
@@ -1176,7 +1176,7 @@ h6 {
   max-width: 194px;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
 }
 .inform-section span {
@@ -1200,7 +1200,7 @@ h6 {
   .inform-section__title {
     max-width: 32.8125rem;
     font-size: 3rem;
-    line-height: 1.16667;
+    line-height: 1.1;
     letter-spacing: -0.02em;
   }
   .inform-section__description-block {
@@ -1211,7 +1211,7 @@ h6 {
   .inform-section__description {
     max-width: 12.125rem;
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.7;
   }
   .inform-section__description span {
     font-size: 2.5rem;
@@ -1232,7 +1232,7 @@ h6 {
   }
   .inform-section__description-block {
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.7;
   }
   .inform-section__description {
     max-width: 100%;
@@ -1274,7 +1274,7 @@ h6 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.3;
   letter-spacing: -0.01em;
   color: var(--aluminium);
 }
@@ -1358,7 +1358,7 @@ h6 {
 .about-first-screen__subtitle {
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.33;
   letter-spacing: -0.01em;
   color: var(--aluminium);
 }
@@ -1367,14 +1367,14 @@ h6 {
   width: 100%;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--white);
 }
 .about-first-screen__social-item {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--white);
 }
 .about-first-screen__social-item:not(:last-child) {
@@ -1428,7 +1428,7 @@ h6 {
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--white);
@@ -1440,7 +1440,7 @@ h6 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   text-align: center;
   color: var(--aluminium);
   margin-bottom: 2.95rem;
@@ -1467,7 +1467,7 @@ h6 {
   .about-cards__text {
     margin-bottom: 3rem;
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.71;
   }
 }
 .big-num {
@@ -1498,7 +1498,7 @@ h6 {
   text-align: center;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   text-align: center;
   color: var(--aluminium);
 }
@@ -1515,7 +1515,7 @@ h6 {
   }
   .big-num__number {
     font-size: 3rem;
-    line-height: 1.16667;
+    line-height: 1.16;
     letter-spacing: -0.02em;
   }
 }
@@ -1547,7 +1547,7 @@ h6 {
     text-align: start;
     font-weight: 400;
     font-size: 0.85rem;
-    line-height: 1.71429;
+    line-height: 1.71;
   }
 }
 .experience {
@@ -1564,7 +1564,7 @@ h6 {
 .experience__title {
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 0.9375rem;
@@ -1572,13 +1572,13 @@ h6 {
 .experience__text {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
 }
 .experience__sub-text {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
   position: absolute;
   bottom: 0;
@@ -1597,7 +1597,7 @@ h6 {
   }
   .experience__title {
     font-size: 3rem;
-    line-height: 1.16667;
+    line-height: 1.1;
     letter-spacing: -0.02em;
   }
   .experience__narrow-card-block {
@@ -1630,7 +1630,7 @@ h6 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 0.85rem;
-    line-height: 1.71429;
+    line-height: 1.7;
     color: var(--aluminium);
     margin-bottom: 3rem;
   }
@@ -1650,7 +1650,7 @@ h6 {
 .blog-firs-screen__title {
   font-weight: 700;
   font-size: 4.5rem;
-  line-height: 1.19444;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--white);
@@ -1659,7 +1659,7 @@ h6 {
 .blog-firs-screen__text {
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.3;
   letter-spacing: -0.01em;
   text-align: center;
   color: var(--aluminium);
@@ -1675,7 +1675,7 @@ h6 {
   border-radius: 0.5rem;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--white);
   padding: 0.875rem 1.25rem;
   max-width: 35.44rem;
@@ -1727,7 +1727,7 @@ h6 {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 1rem;
@@ -1735,7 +1735,7 @@ h6 {
 .blog-cards-section__description {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
   max-width: 33.1875rem;
   margin-bottom: 3rem;
@@ -1855,7 +1855,7 @@ h6 {
 .main-title {
   font-weight: 700;
   font-size: 4.5rem;
-  line-height: 1.19444;
+  line-height: 1.19;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 1.2rem;
@@ -1911,7 +1911,7 @@ h6 {
   max-width: 33.12rem;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--aluminium);
 }
 .call-to-action__description {
@@ -1935,7 +1935,7 @@ h6 {
   max-width: 31.75rem;
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: -0.02em;
   color: var(--white);
 }

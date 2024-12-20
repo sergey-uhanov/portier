@@ -34,7 +34,7 @@
 	&__description {
 		font-weight: 400;
 		font-size: 1.5rem;
-		line-height: 1.33333;
+		line-height: 1.3;
 		letter-spacing: -0.01em;
 		color: var(--aluminium);
 		margin-bottom: 2rem;
@@ -228,7 +228,7 @@
 		font-family: var(--font-family);
 		font-weight: 600;
 		font-size: 0.88rem;
-		line-height: 1.71429;
+		line-height: 1.7;
 		color: var(--white);
 	}
 
@@ -238,8 +238,8 @@
 		height: 2.75rem;
 		background: var(--steel-gray);
 		position: absolute;
-		bottom: 2.275rem;
-		right: 2.6125rem;
+		bottom: 2.2rem;
+		right: 2.6rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -366,14 +366,14 @@
 		flex: 1 1 400px;
 		font-weight: 400;
 		font-size: 0.88rem;
-		line-height: 1.71429;
+		line-height: 1.7;
 		color: var(--aluminium);
 	}
 
 	&__title {
 		font-weight: 700;
 		font-size: 3rem;
-		line-height: 1.16667;
+		line-height: 1.1;
 		letter-spacing: -0.02em;
 		color: var(--white);
 		margin-bottom: 1rem;
@@ -476,7 +476,7 @@
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 0.88rem;
-	line-height: 1.71429;
+	line-height: 1.7;
 	color: var(--aluminium);
 	&__container {
 		display: flex;
@@ -489,7 +489,7 @@
 		font-family: var(--font-family);
 		font-weight: 400;
 		font-size: 0.88rem;
-		line-height: 1.71429;
+		line-height: 1.7;
 		color: var(--aluminium);
 		max-width: 40.38rem;
 		width: 100%;
@@ -499,7 +499,7 @@
 		font-family: var(--font-family);
 		font-weight: 700;
 		font-size: 3rem;
-		line-height: 1.16667;
+		line-height: 1.1;
 		letter-spacing: -0.02em;
 		color: var(--white);
 		margin-bottom: 1rem;
@@ -538,7 +538,7 @@
 	&__author {
 		font-weight: 600;
 		font-size: 1.5rem;
-		line-height: 1.33333;
+		line-height: 1.3;
 		color: var(_white);
 		margin-bottom: mixins.rem(4);
 	}
@@ -546,7 +546,7 @@
 	&__position {
 		font-weight: 400;
 		font-size: 0.75rem;
-		line-height: 1.66667;
+		line-height: 1.6;
 		color: var(--white);
 	}
 }
@@ -635,7 +635,7 @@
 		&__description {
 			max-width: mixins.rem(330);
 			font-size: 0.85rem;
-			line-height: 1.71429;
+			line-height: 1.7;
 			margin-bottom: mixins.rem(48);
 		}
 
@@ -659,12 +659,12 @@
 
 		&__description {
 			font-size: 0.88rem;
-			line-height: 1.71429;
+			line-height: 1.7;
 		}
 
 		&__author {
 			font-size: 1.45rem;
-			line-height: 1.33333;
+			line-height: 1.3;
 		}
 
 		&__position {
@@ -692,7 +692,7 @@
 	&__title {
 		font-weight: 700;
 		font-size: 3rem;
-		line-height: 1.16667;
+		line-height: 1.1;
 		letter-spacing: -0.02em;
 		color: var(--white);
 		max-width: mixins.rem(646);
@@ -708,7 +708,7 @@
 		max-width: 194px;
 		font-weight: 400;
 		font-size: 0.88rem;
-		line-height: 1.71429;
+		line-height: 1.7;
 		color: var(--aluminium);
 	}
 	span {
@@ -734,7 +734,7 @@
 		&__title {
 			max-width: mixins.rem(525);
 			font-size: 3rem;
-			line-height: 1.16667;
+			line-height: 1.1;
 			letter-spacing: -0.02em;
 		}
 
@@ -747,7 +747,7 @@
 		&__description {
 			max-width: mixins.rem(194);
 			font-size: 0.88rem;
-			line-height: 1.71429;
+			line-height: 1.7;
 			span {
 				font-size: 2.5rem;
 				line-height: 1.2;
@@ -772,7 +772,7 @@
 
 		&__description-block {
 			font-size: 0.88rem;
-			line-height: 1.71429;
+			line-height: 1.7;
 		}
 
 		&__description {

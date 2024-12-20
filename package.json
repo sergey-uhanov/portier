@@ -3,10 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "pre": "vite preview"
+    "pre": "vite preview",
+    "lint:scss": "stylelint 'src/**/*.scss'",
+    "lint:scss:fix": "stylelint 'src/**/*.scss' --fix"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
@@ -16,6 +19,8 @@
     "prettier": "^3.4.2",
     "sass": "^1.82.0",
     "sharp": "^0.33.5",
+    "stylelint": "^16.12.0",
+    "stylelint-order": "^6.0.4",
     "vite": "^6.0.1",
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-html-inject": "^1.1.2",

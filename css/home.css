@@ -26,14 +26,14 @@
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.33;
   color: var(--white);
   margin-bottom: 1rem;
 }
 .wide-card__description {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--aluminium);
 }
 
@@ -70,14 +70,14 @@
 .experience__narrow-card-block .narrow-card__title {
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.33;
   color: var(--white);
   margin-bottom: 0.25rem;
 }
 .experience__narrow-card-block .narrow-card__description {
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 1.66667;
+  line-height: 1.66;
   color: var(--white);
 }
 
@@ -117,7 +117,7 @@
 .image-card__description {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--aluminium);
   max-width: 31.75rem;
   margin-bottom: 1.375rem;
@@ -125,7 +125,7 @@
 .image-card__link {
   font-weight: 600;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--navy-blue);
   position: relative;
   left: 4px;
@@ -206,7 +206,7 @@
   }
   .image-cards-block {
     row-gap: 3.125rem;
-    row-gap: 2.125rem;
+    row-gap: 2.1rem;
   }
   .image-card__text {
     padding-left: 0.6rem;
@@ -216,7 +216,7 @@
   .image-card__title {
     font-weight: 600;
     font-size: 1.5rem;
-    line-height: 1.33333;
+    line-height: 1.33;
   }
   .image-card__link {
     left: 0;
@@ -230,7 +230,7 @@
   .wide-card__description {
     font-weight: 300;
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.71;
   }
 }
 :root {
@@ -300,7 +300,7 @@
 .first-screen__description {
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.3;
   letter-spacing: -0.01em;
   color: var(--aluminium);
   margin-bottom: 2rem;
@@ -448,7 +448,7 @@
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--white);
 }
 .big-poster__icon {
@@ -457,8 +457,8 @@
   height: 2.75rem;
   background: var(--steel-gray);
   position: absolute;
-  bottom: 2.275rem;
-  right: 2.6125rem;
+  bottom: 2.2rem;
+  right: 2.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -581,13 +581,13 @@
   flex: 1 1 400px;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
 }
 .section-with-img__title {
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 1rem;
@@ -681,7 +681,7 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
 }
 .strange-section__container {
@@ -694,7 +694,7 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
   max-width: 40.38rem;
   width: 100%;
@@ -703,7 +703,7 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 1rem;
@@ -728,14 +728,14 @@
 .comment-card__author {
   font-weight: 600;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.3;
   color: var(_white);
   margin-bottom: 0.25rem;
 }
 .comment-card__position {
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 1.66667;
+  line-height: 1.6;
   color: var(--white);
 }
 
@@ -785,7 +785,7 @@
   .strange-section__description {
     max-width: 20.625rem;
     font-size: 0.85rem;
-    line-height: 1.71429;
+    line-height: 1.7;
     margin-bottom: 3rem;
   }
   .strange-section__text {
@@ -797,11 +797,11 @@
   }
   .comment-card__description {
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.7;
   }
   .comment-card__author {
     font-size: 1.45rem;
-    line-height: 1.33333;
+    line-height: 1.3;
   }
   .comment-card:not(:last-child) {
     margin-bottom: 0.9375rem;
@@ -819,7 +819,7 @@
 .inform-section__title {
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
   max-width: 40.375rem;
@@ -833,7 +833,7 @@
   max-width: 194px;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
 }
 .inform-section span {
@@ -857,7 +857,7 @@
   .inform-section__title {
     max-width: 32.8125rem;
     font-size: 3rem;
-    line-height: 1.16667;
+    line-height: 1.1;
     letter-spacing: -0.02em;
   }
   .inform-section__description-block {
@@ -868,7 +868,7 @@
   .inform-section__description {
     max-width: 12.125rem;
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.7;
   }
   .inform-section__description span {
     font-size: 2.5rem;
@@ -889,7 +889,7 @@
   }
   .inform-section__description-block {
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.7;
   }
   .inform-section__description {
     max-width: 100%;

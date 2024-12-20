@@ -29,7 +29,7 @@
 		font-family: var(--font-family);
 		font-weight: 600;
 		font-size: 1.5rem;
-		line-height: 1.33333;
+		line-height: 1.33;
 		color: var(--white);
 		margin-bottom: mixins.rem(16);
 	}
@@ -37,7 +37,7 @@
 	&__description {
 		font-weight: 400;
 		font-size: 0.88rem;
-		line-height: 1.71429;
+		line-height: 1.71;
 		color: var(--aluminium);
 	}
 }
@@ -76,7 +76,7 @@
 	&__title {
 		font-weight: 600;
 		font-size: 1.5rem;
-		line-height: 1.33333;
+		line-height: 1.33;
 		color: var(--white);
 		margin-bottom: mixins.rem(4);
 	}
@@ -84,7 +84,7 @@
 	&__description {
 		font-weight: 400;
 		font-size: 0.75rem;
-		line-height: 1.66667;
+		line-height: 1.66;
 		color: var(--white);
 	}
 }
@@ -126,7 +126,7 @@
 	&__description {
 		font-weight: 400;
 		font-size: 0.88rem;
-		line-height: 1.71429;
+		line-height: 1.71;
 		color: var(--aluminium);
 		max-width: mixins.rem(508);
 		margin-bottom: mixins.rem(22);
@@ -135,7 +135,7 @@
 	&__link {
 		font-weight: 600;
 		font-size: 0.88rem;
-		line-height: 1.71429;
+		line-height: 1.71;
 		color: var(--navy-blue);
 		position: relative;
 		left: 4px;
@@ -236,7 +236,7 @@
 	}
 	.image-cards-block {
 		row-gap: mixins.rem(50);
-		row-gap: 2.125rem;
+		row-gap: 2.1rem;
 	}
 	.image-card {
 		&__text {
@@ -248,7 +248,7 @@
 		&__title {
 			font-weight: 600;
 			font-size: 1.5rem;
-			line-height: 1.33333;
+			line-height: 1.33;
 		}
 
 		&__description {
@@ -270,7 +270,7 @@
 		&__description {
 			font-weight: 300;
 			font-size: 0.88rem;
-			line-height: 1.71429;
+			line-height: 1.71;
 			// letter-spacing: -0.02em;
 		}
 	}

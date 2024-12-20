@@ -28,7 +28,7 @@
 .about-first-screen__subtitle {
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 1.33333;
+  line-height: 1.33;
   letter-spacing: -0.01em;
   color: var(--aluminium);
 }
@@ -37,14 +37,14 @@
   width: 100%;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--white);
 }
 .about-first-screen__social-item {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   color: var(--white);
 }
 .about-first-screen__social-item:not(:last-child) {
@@ -98,7 +98,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--white);
@@ -110,7 +110,7 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   text-align: center;
   color: var(--aluminium);
   margin-bottom: 2.95rem;
@@ -137,7 +137,7 @@
   .about-cards__text {
     margin-bottom: 3rem;
     font-size: 0.88rem;
-    line-height: 1.71429;
+    line-height: 1.71;
   }
 }
 .big-num {
@@ -168,7 +168,7 @@
   text-align: center;
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.71;
   text-align: center;
   color: var(--aluminium);
 }
@@ -185,7 +185,7 @@
   }
   .big-num__number {
     font-size: 3rem;
-    line-height: 1.16667;
+    line-height: 1.16;
     letter-spacing: -0.02em;
   }
 }
@@ -217,7 +217,7 @@
     text-align: start;
     font-weight: 400;
     font-size: 0.85rem;
-    line-height: 1.71429;
+    line-height: 1.71;
   }
 }
 .experience {
@@ -234,7 +234,7 @@
 .experience__title {
   font-weight: 700;
   font-size: 3rem;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 0.9375rem;
@@ -242,13 +242,13 @@
 .experience__text {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
 }
 .experience__sub-text {
   font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.71429;
+  line-height: 1.7;
   color: var(--aluminium);
   position: absolute;
   bottom: 0;
@@ -267,7 +267,7 @@
   }
   .experience__title {
     font-size: 3rem;
-    line-height: 1.16667;
+    line-height: 1.1;
     letter-spacing: -0.02em;
   }
   .experience__narrow-card-block {
@@ -300,7 +300,7 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 0.85rem;
-    line-height: 1.71429;
+    line-height: 1.7;
     color: var(--aluminium);
     margin-bottom: 3rem;
   }
