@@ -1748,7 +1748,7 @@ h6 {
 }
 @media (max-width: 500px) {
   .blog-cards-section {
-    padding: 2.875rem 0 3.75rem 0;
+    padding: 2.875rem 0 2.75rem 0;
   }
   .blog-cards-section__title {
     font-size: 2rem;
@@ -1757,7 +1757,9 @@ h6 {
   }
 }
 .recall {
-  padding: 0rem 0 12.6875rem 18.75rem;
+  padding-top: 12.5rem;
+  padding-bottom: 12.65rem;
+  padding-left: 13.3125rem;
 }
 .recall__person {
   display: flex;
@@ -1810,21 +1812,24 @@ h6 {
 
 @media (max-width: 1024px) {
   .recall {
-    padding: 0rem 0 5.3125rem 0rem;
+    padding: 6.125rem 0 6.4125rem 0rem;
   }
   .recall__title {
     font-size: 4rem;
     line-height: 1;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 500px) {
   .recall {
-    padding: 0rem 0 3.25rem 0rem;
+    padding: 5.625rem 0 3.35rem 0rem;
   }
   .recall__title {
     font-size: 2.5rem;
     line-height: 1.2;
     letter-spacing: -0.01em;
+  }
+  .recall__go-back {
+    margin-top: 2.25rem;
   }
 }
 .blue-button {
@@ -2000,11 +2005,12 @@ body {
   color: var(--absolute-white);
   overflow-x: hidden;
 }
-.lock body {
+.lock {
   overflow: hidden;
   touch-action: none;
   overscroll-behavior: none;
 }
+
 .wrapper {
   min-height: 100%;
   display: flex;

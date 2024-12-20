@@ -1,18 +1,18 @@
-import { Plugin } from 'vite';
+
 import path from 'path';
 
 /**
  * Vite плагин для замены <img> на <picture>, если <img> не вложен в <picture>.
  */
-export default function replaceImgWithPicturePlugin(): Plugin {
+export default function replaceImgWithPicturePlugin() {
   return {
     name: 'vite-plugin-replace-img-with-picture',
-    transformIndexHtml(html: string): string {
+    transformIndexHtml(html) {
       const imgTagRegex = /<img\s+([^>]*src=["'](.*?)(\.(png|jpe?g|gif))["'].*?)\s*>/gi;
       const pictureTagRegex = /<picture>.*?<img.*?<\/picture>/gis;
 
       // Найти все <img> внутри <picture>, чтобы исключить их из обработки
-      const excludedImgs: string[] = [];
+      const excludedImgs = [];
       html.replace(pictureTagRegex, (match) => {
         const imgMatch = match.match(imgTagRegex);
         if (imgMatch) {

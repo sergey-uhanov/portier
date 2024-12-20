@@ -4,6 +4,9 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 import path, { resolve } from 'path';
 import replaceImgWithPicturePlugin from './utils/replaceImgWithPicturePlugin';
 import { convertImages } from './utils/convertImages';
+import injectHTML from 'vite-plugin-html-inject';
+
+
 
 const publicImagesDir = path.resolve(__dirname, 'public/images');
 const outputImagesDir = path.resolve(__dirname, 'images-con');
@@ -31,7 +34,7 @@ export default defineConfig({
 		checker({
 			// typescript: true,
 		}),
-
+		injectHTML(),
 		viteStaticCopy({
 			targets: [
 				{

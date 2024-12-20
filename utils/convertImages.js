@@ -8,12 +8,12 @@ import path from 'path';
  * @param srcDir - Путь к исходной директории с изображениями.
  * @param destDir - Путь к директории для сохранения преобразованных изображений.
  */
-export const convertImages = (srcDir: string, destDir: string): void => {
+export const convertImages = (srcDir, destDir) => {
 	// Считываем файлы из исходной директории
 	const files = fs.readdirSync(srcDir);
 
 	// Обрабатываем каждый файл
-	files.forEach((file: string) => {
+	files.forEach((file) => {
 		const ext = path.extname(file).toLowerCase();
 		const filePath = path.join(srcDir, file);
 		const destPath = path.join(destDir, `${path.basename(file, ext)}.webp`);
@@ -23,7 +23,7 @@ export const convertImages = (srcDir: string, destDir: string): void => {
 			sharp(filePath)
 				.webp({ quality: 75 })
 				.toFile(destPath)
-				.catch((err: Error) => console.error(`Error converting ${file}:`, err));
+				.catch((err) => console.error(`Error converting ${file}:`, err));
 		}
 
 		// Конвертация в формат AVIF
@@ -32,7 +32,7 @@ export const convertImages = (srcDir: string, destDir: string): void => {
 			sharp(filePath)
 				.avif({ quality: 75 })
 				.toFile(avifDestPath)
-				.catch((err: Error) =>
+				.catch((err) =>
 					console.error(`Error converting ${file} to AVIF:`, err),
 				);
 		}
