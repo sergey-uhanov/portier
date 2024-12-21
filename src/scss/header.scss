@@ -15,7 +15,8 @@
 		align-items: center;
 	}
 
-	&__logo-block {
+	&__logo-block:hover {
+
 	}
 
 	&__menu {
@@ -48,6 +49,16 @@
 	&__title {
 	}
 }
+.logo-block{
+	&__title:hover{
+		color: #456;
+	}
+
+	svg path{
+		color: #456;
+	}
+}
+
 .logo-block_about {
 	position: relative;
 	top: 1px;
@@ -83,6 +94,9 @@
 		font-size: 0.88rem;
 		line-height: 1.4;
 		color: var(--white);
+	}
+	&__link_button:active{
+		background: #88888d;
 	}
 }
 .icon-menu {

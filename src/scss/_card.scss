@@ -42,11 +42,24 @@
 	}
 }
 .wide-card_active {
-	background: var(--steel-gray);
+
 	max-width: mixins.rem(386);
 	border-radius: 5px;
+	.wide-card__description{
+
+	}
 }
 
+.wide-card:hover{
+	background: var(--steel-gray);
+	.wide-card__icon {
+		background: var(--lime-green);
+	}
+	.wide-card__icon svg path {
+		fill: #12121c; /* Изменение цвета иконки */
+	}
+
+}
 .wide-card-block_about {
 	gap: 32px 30px;
 	.wide-card {
@@ -91,10 +104,16 @@
 .narrow-card:not(:last-child) {
 	margin-bottom: mixins.rem(32);
 }
-.narrow-card_active {
+.narrow-card:hover {
 	background: var(--steel-gray);
+	border-radius: 0.5rem;
+
+
 	.narrow-card__icon {
 		background: var(--lime-green);
+		svg path{
+			fill: var(--vulcan);
+		}
 	}
 }
 
@@ -240,8 +259,8 @@
 	}
 	.image-card {
 		&__text {
-			padding-left: 0.6rem;
-			padding-top: 1.17rem;
+			padding-left: 0.4rem;
+			padding-top: 1.24rem;
 			padding-bottom: 1.17rem;
 		}
 

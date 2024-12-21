@@ -13,7 +13,7 @@
 	.overlay {
 		position: absolute;
 		left: 50%;
-		top: 30%;
+		top: 36%;
 		transform: translate(-50%);
 
 		z-index: 0;
@@ -54,6 +54,9 @@
 		line-height: 1.71;
 		color: var(--white);
 	}
+	&__social-item:hover {
+		color: var(--aluminium);
+	}
 	&__social-item:not(:last-child) {
 		margin-bottom: mixins.rem(8);
 	}
@@ -63,7 +66,7 @@
 	.about-first-screen {
 		padding: mixins.rem(598) 0 mixins.rem(120) 0;
 		.overlay {
-			top: 27%;
+			top: 36%;
 		}
 		&__container {
 		}
@@ -115,7 +118,7 @@
 
 		&__social-block {
 			display: flex;
-			gap: mixins.rem(40);
+			gap: mixins.rem(39);
 		}
 
 		&__social-item {
@@ -138,7 +141,12 @@
 		}
 	}
 }
-
+@media (max-width: 413px) {
+	.about-first-screen__social-block {
+		display: flex;
+		gap: mixins.rem(25);
+	}
+}
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 .about-cards {
 	padding: mixins.rem(120) 0;
@@ -329,7 +337,7 @@
 }
 @media (max-width: 1024px) {
 	.experience {
-		padding: mixins.rem(85) 0 mixins.rem(120) 0;
+		padding: mixins.rem(88) 0 mixins.rem(120) 0;
 		&__container {
 		}
 
@@ -339,7 +347,7 @@
 
 		&__title {
 			font-size: 3rem;
-			line-height: 1.1;
+			line-height: 1.15;
 			letter-spacing: -0.02em;
 		}
 
@@ -379,7 +387,7 @@
 }
 @media (max-width: 500px) {
 	.experience {
-		padding: mixins.rem(40) 0;
+		padding: mixins.rem(40) 0 mixins.rem(46.4) 0;
 		&__container {
 		}
 

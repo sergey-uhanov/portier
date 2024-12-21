@@ -3,9 +3,9 @@
 @use "_variables.scss";
 .first-screen {
 	padding-top: mixins.rem(206.2);
-	padding-bottom: mixins.rem(115);
+	padding-bottom: mixins.rem(120);
 	position: relative;
-	z-index: -1;
+	z-index: 1;
 
 	@media (max-width: 1024px) {
 		padding-top: mixins.rem(191);
@@ -26,9 +26,11 @@
 	}
 	@media (max-width: 414px) {
 		padding-top: mixins.rem(181.6);
-		padding-bottom: mixins.rem(49);
+		padding-bottom: mixins.rem(47.4);
 	}
 	&__container {
+		position: relative;
+		z-index: 10;
 	}
 
 	&__description {
@@ -47,6 +49,7 @@
 	}
 
 	&__button {
+		cursor: pointer;
 		margin-bottom: mixins.rem(76);
 		@media (max-width: 760px) {
 			margin-bottom: mixins.rem(60);
@@ -114,7 +117,7 @@
 	will-change: transform, opacity;
 	transform: translateZ(0);
 	position: absolute;
-	z-index: 10;
+	z-index: -1;
 	width: 100px;
 	height: 100px;
 	top: 0;
@@ -204,7 +207,8 @@
 // big posters sections
 
 .big-posters {
-	padding-top: mixins.rem(121.6);
+
+	padding-top: mixins.rem(120);
 	padding-bottom: mixins.rem(120);
 
 	&__container {
@@ -220,7 +224,7 @@
 
 	&__text {
 		position: absolute;
-		bottom: 2.27rem;
+		bottom: 2.37rem;
 		left: 2.31rem;
 		border-radius: 0.5rem;
 		padding: 1.3rem;
@@ -238,16 +242,21 @@
 		height: 2.75rem;
 		background: var(--steel-gray);
 		position: absolute;
-		bottom: 2.2rem;
-		right: 2.6rem;
+		bottom: 2.5rem;
+		right: 2.5rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
+	&__icon:hover{
+		background: var(--lime-green);
+		svg path {
+			fill: var(--vulcan);
+		}
+	}
+
 }
-.big-poster__icon_lime {
-	background-color: var(--lime-green);
-}
+
 .big-poster:not(:last-child) {
 	margin-bottom: 80px;
 }
@@ -348,6 +357,24 @@
 		}
 	}
 }
+@media (max-width: 413px) {
+	.big-posters {
+		padding-bottom: mixins.rem(30);
+	}
+	.big-poster {
+		height: 13.75rem;
+		&__text {
+			padding: 5px;
+			max-width: 14.55rem;
+			line-height: 1.2;
+		}
+		&__icon {
+			right: mixins.rem(0);
+			bottom: mixins.rem(24.4);
+		}
+	}
+}
+
 
 // section-with-img====================================
 .section-with-img {
@@ -356,7 +383,7 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+
 		column-gap: 30px;
 		row-gap: 50px;
 	}
@@ -368,12 +395,13 @@
 		font-size: 0.88rem;
 		line-height: 1.7;
 		color: var(--aluminium);
+		padding-top: 9.57rem;
 	}
 
 	&__title {
 		font-weight: 700;
 		font-size: 3rem;
-		line-height: 1.1;
+		line-height: 1.16;
 		letter-spacing: -0.02em;
 		color: var(--white);
 		margin-bottom: 1rem;
@@ -394,6 +422,8 @@
 @media (max-width: 1024px) {
 	.section-with-img__text {
 		max-width: mixins.rem(414);
+		padding-top: 4.87rem;
+
 	}
 	.section-with-img {
 		padding-top: mixins.rem(73.4);
@@ -404,6 +434,8 @@
 
 		&__title {
 			max-width: 24.15rem;
+			margin-bottom: 1.2rem;
+
 		}
 		&__description {
 			max-width: 24.25rem;
@@ -414,6 +446,11 @@
 		.section-with-img__text {
 			max-width: mixins.rem(358);
 			margin-bottom: 0;
+		}
+	}
+	.section-with-img__img_position-botom {
+		.section-with-img__text{
+			padding-top: 3.25rem;
 		}
 	}
 }
@@ -457,6 +494,7 @@
 	.section-with-img__text {
 		max-width: 34.15rem;
 		margin-bottom: 2.9rem;
+		padding-top: mixins.rem(0);
 	}
 	.section-with-img__img_position-botom {
 		padding-top: mixins.rem(42);
@@ -467,12 +505,15 @@
 		.section-with-img__title {
 			max-width: 20rem;
 		}
+		.section-with-img__text{
+			padding-top: 0;
+		}
 	}
 }
 
 // strange section++++++++++++++++++++++++++++++++++++++
 .strange-section {
-	padding: mixins.rem(120) 0;
+	padding: mixins.rem(121.4) 0 mixins.rem(128) 0 ;
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 0.88rem;
@@ -502,7 +543,7 @@
 		line-height: 1.1;
 		letter-spacing: -0.02em;
 		color: var(--white);
-		margin-bottom: 1rem;
+		margin-bottom: 1.2rem;
 	}
 
 	&__description {
@@ -511,16 +552,13 @@
 
 	&__text {
 		position: absolute;
-		bottom: -3px;
+		bottom: -8px;
 		left: 0;
 	}
 
 	&__comment-card-block {
 	}
-}
-.comment-card-block {
-	&__comment-card {
-	}
+
 }
 .comment-card {
 	max-width: 27.38rem;
@@ -533,13 +571,13 @@
 	&__text {
 	}
 	&__description {
-		margin-bottom: mixins.rem(24);
+		margin-bottom: mixins.rem(22.4);
 	}
 	&__author {
 		font-weight: 600;
 		font-size: 1.5rem;
 		line-height: 1.3;
-		color: var(_white);
+		color: var(--white);
 		margin-bottom: mixins.rem(4);
 	}
 
@@ -555,12 +593,12 @@
 	background: var(--steel-gray);
 }
 .comment-card:not(:last-child) {
-	margin-bottom: mixins.rem(39);
+	margin-bottom: 2.63rem;
 }
 
 @media (max-width: 1024px) {
 	.strange-section {
-		padding-top: calc(16px + 104.8 * ((100vw - 414px) / (1024 - 414)));
+		padding-top: calc(24px + 104.8 * ((100vw - 414px) / (1024 - 414)));
 		padding-bottom: calc(48px + 74.2 * ((100vw - 414px) / (1024 - 414)));
 
 		&__container {
@@ -571,6 +609,7 @@
 
 		&__title {
 			max-width: mixins.rem(315);
+			margin-bottom: mixins.rem(20);
 		}
 
 		&__description {
@@ -618,6 +657,8 @@
 }
 @media (max-width: 414px) {
 	.strange-section {
+		padding-top: 1rem;
+		padding-bottom: 2.8rem;
 		&__container {
 			flex-wrap: wrap;
 		}
@@ -630,18 +671,19 @@
 			line-height: 1.25;
 			letter-spacing: -0.01em;
 			max-width: mixins.rem(315);
+			margin-bottom: 17px;
 		}
 
 		&__description {
 			max-width: mixins.rem(330);
 			font-size: 0.85rem;
 			line-height: 1.7;
-			margin-bottom: mixins.rem(48);
+			margin-bottom: 2.7rem;
 		}
 
 		&__text {
 			position: relative;
-			margin-bottom: mixins.rem(60);
+			margin-bottom: 4.15rem;
 		}
 
 		&__comment-card-block {
@@ -659,12 +701,14 @@
 
 		&__description {
 			font-size: 0.88rem;
-			line-height: 1.7;
+			line-height: 1.75;
 		}
 
 		&__author {
 			font-size: 1.45rem;
 			line-height: 1.3;
+			letter-spacing: 0.01em;
+			margin-bottom: 0.35rem;
 		}
 
 		&__position {
@@ -681,7 +725,7 @@
 
 .inform-section {
 	padding-top: mixins.rem(123.4);
-	padding-bottom: mixins.rem(121.8);
+	padding-bottom: mixins.rem(125);
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -734,7 +778,7 @@
 		&__title {
 			max-width: mixins.rem(525);
 			font-size: 3rem;
-			line-height: 1.1;
+			line-height: 1.2;
 			letter-spacing: -0.02em;
 		}
 

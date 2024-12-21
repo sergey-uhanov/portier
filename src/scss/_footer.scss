@@ -1,9 +1,13 @@
 @use "mixins.scss";
 .footer {
-	padding-top: mixins.rem(118.2);
+	padding-top: mixins.rem(129.4);
 	padding-bottom: mixins.rem(115);
 	background: var(--steel-gray);
 	&__container {
+	}
+	&__home-link{
+		display: block;
+		width: 9rem;
 	}
 	&__logo {
 		margin-bottom: mixins.rem(33);
@@ -43,10 +47,23 @@
 	&__social-link:not(:last-child) {
 		margin-right: 24px;
 	}
-	&__social-link_active {
+	&__social-link:hover {
 		border-radius: 3.12rem;
 		background: var(--lime-green);
+		svg path{
+			color: var(--vulcan);
+			fill: var(--vulcan);
+		}
 	}
+}
+.logo-block_footer{
+	position: relative;
+	top: -4px;
+	left: 8px;
+	.logo-block__logo{
+		margin-right: 7px;
+	}
+
 }
 
 .footer-menu {
@@ -68,7 +85,7 @@
 }
 @media (max-width: 1024px) {
 	.footer {
-		padding-top: mixins.rem(99);
+		padding-top: mixins.rem(110);
 		&__container {
 		}
 
@@ -113,6 +130,7 @@
 		}
 
 		&__logo {
+
 			margin-bottom: mixins.rem(48);
 		}
 
@@ -140,6 +158,8 @@
 	}
 	.logo-block {
 		&__logo {
+			position: relative;
+			left: 2px;
 		}
 
 		&__title {
@@ -153,10 +173,29 @@
 			max-width: mixins.rem(155);
 		}
 	}
+	.footer-menu__list {
+		gap:9px 36px;
+	}
 	.logo-block_footer {
 		.logo-block__title {
 			margin-left: 8px;
 			font-size: 1.69rem;
 		}
+	}
+	.logo-block_footer{
+		position: relative;
+		top: -4px;
+		left: 8px;
+		.logo-block__logo{
+			margin: 0;
+			transform: scale(0.89);
+			position: relative;
+			left: -4px;
+			top: 2px;
+		}
+		.logo-block__title{
+			margin: 0;
+		}
+
 	}
 }

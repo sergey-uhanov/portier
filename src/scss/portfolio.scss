@@ -26,6 +26,8 @@
 	}
 	&__blue-button:hover {
 		background-color: #004693;
+	}&__blue-button:active {
+		background-color: darkblue;
 	}
 	&__text {
 		max-width: 38.6rem;

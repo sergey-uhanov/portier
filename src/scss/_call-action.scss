@@ -35,6 +35,9 @@
 	&__button:hover {
 		background-color: #004693;
 	}
+	&__button:active{
+		background: darkblue;
+	}
 
 	&__title {
 		max-width: mixins.rem(508);
@@ -93,6 +96,7 @@
 	}
 }
 @media (max-width: 414px) {
+
 	.call-to-action {
 		padding-top: mixins.rem(45);
 		padding-bottom: mixins.rem(45);
@@ -106,7 +110,7 @@
 		}
 
 		&__description {
-			margin-bottom: mixins.rem(24);
+			margin-bottom: 1.4rem;
 		}
 
 		&__button {
@@ -118,5 +122,15 @@
 			line-height: 1.25;
 			letter-spacing: -0.01em;
 		}
+	}
+.call-to-action_about{
+	padding-bottom: 3rem;
+}
+	.call-to-action_portfolio{
+		padding-top: 3.3125rem;
+		padding-bottom: 3rem;
+	}
+	.call-to-action_blog{
+		padding-bottom: 3.2rem;
 	}
 }

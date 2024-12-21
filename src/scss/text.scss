@@ -61,6 +61,12 @@
 		border-radius: 0.5rem;
 		padding: 0.88rem 1.5rem;
 	}
+	&__go-back:hover{
+	background: #2eb5fa;
+	}
+	&__go-back:active{
+		background: darkblue;
+	}
 }
 @media (max-width: 1024px) {
 	.recall {
